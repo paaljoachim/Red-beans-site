@@ -1,5 +1,5 @@
 # Red-site-test
-This is a test site that I made using the Beans Framework.
+This is a test site that I made using the Beans Framework. Meant for testing and learning.
 
 It contains lots of widget locations. 4 menu locations. Various experimenting.
 
