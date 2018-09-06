@@ -1,0 +1,276 @@
+/*
+Theme Name: Beans child red edition
+Description: Starter Child Theme for the Beans Theme.
+Author: Paal Joachim Romdahl
+Author URI: http://www.easywebdesigntutorials.com
+Template: tm-beans
+Version: 1.0.0
+Text Domain: tm-beans
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+html, body {
+	/* Sticky Footer */
+	margin:0;
+	padding:0;
+	height: 98%;
+	line-height: 1.4em;
+}
+
+.global-link-color {
+	color: #BD007B;
+} 
+
+
+/* Full area similar to body */
+.tm-site {
+	font-size: 16px;	
+	/* Sticky Footer */
+	min-height: 100%;	
+	position: relative; 
+}
+
+/*---------- Header area ----------*/
+
+/* Header */
+.tm-header {
+	padding: 5px;
+}
+
+
+/* Logo and description */
+.tm-site-branding {
+	padding: 10px 0 13px 0;
+	margin-left: 50px;	
+}
+
+/* Logo */
+.tm-site-branding a {
+	font-size: 30px;
+	color: #670222;
+	text-shadow: 1px 0 0 #4b2c2c;
+	font-weight: 400;
+}
+
+/* description */
+.tm-site-title-tag  {
+	font-size: 16px;
+	line-height: 35px;
+	color: #670222 !important;
+	font-weight: 500;
+}
+
+
+/* ------ Main content area ----*/
+
+/* Behind content and sidebar */
+.tm-main {
+	/* Sticky footer */
+	padding-top: 20px;
+	padding-bottom: 80px;   
+}
+
+
+
+
+/*---------- Menu --------*/
+
+/* Does not push the content when offcanvas menu opens */
+.uk-offcanvas-page {
+    margin-left: 0 !important; /* Important is necessary since it overwrites CSS added via JS */
+}
+
+/* Added class */
+.header-full {
+	max-width: 100%;
+	padding: 0 0 0 30px;
+	margin: 0;
+}
+
+ /* Primary menu - default top right of logo*/
+ .tm-primary-menu {
+ 	font-size: 16px;
+ 	background: #670222;
+ 	width: 100%; /* Remove width to move the menu up beside the logo. */
+ 	height: 40px;
+ 	/*border: 1px solid #333; */
+ 	padding-left: 7%;	
+ }
+ 
+ .uk-navbar-nav > li {
+ 	margin-left: 40px;
+ }
+ 
+/* Menu items */
+ .tm-primary-menu .menu-item > a {
+ 	color: #fff;
+ 	font-size: 18px;
+ 	height: 40px; 	
+ }
+ 
+ /* Hover effect */
+ .tm-primary-menu .menu-item > a:hover {
+ 	background: none;
+ 	color: #48d3fb;
+ }
+ 
+ /* Current page */
+ .tm-primary-menu .current-menu-item > a{
+ 	background: #fff !important;
+ } 
+ 
+ /* Sub menu */
+ 
+ .tm-primary-menu .menu-item ul {
+ 	border-radius: 3px;
+ 	color: #000;
+ }
+ 
+ /* Sub menu hover */
+ .tm-primary-menu .menu-item li  {
+ 	margin: 0;
+ }
+ 
+ /* Hover over a submenu child item and the parent is also active */
+ .tm-primary-menu .menu-item li:hover > a  {
+ 	color: #48d3fb;
+ 	margin: 0;
+ }
+  
+ .tm-primary-menu .uk-dropdown-navbar {
+    margin-top: 0;
+    border-bottom-right-radius: 30px;
+   background: #670222;
+     /* color: #444; */
+ }
+ 
+ 
+
+/*--------- Page or post -----------*/
+
+
+/* behind content */
+.tm-primary {
+	
+}
+
+/* Inside tm primary */
+.tm-content {
+	
+}
+
+
+/* Page or post */
+.uk-article {
+	
+}
+
+/* article title */
+.uk-article-title {
+}
+
+/* Article content */
+.tm-article-content {
+}
+
+
+/* --------- Adjusting post comments ------*/
+
+
+/* ------- Post Meta class was added in functions.php. I had to add a > li to affect all the post metas. Here we need to use !important for it to work. -----
+.post-meta-style > li{
+	padding: 0;
+	font-size: 14px;	 
+	color: #523e3e;	 
+}
+
+ Adding a dashicon. One can instead add the default UI kit icons.
+.post_meta:before {
+	font-family: 'dashicons';
+	content: "\f464";	 	 
+	font-size: 22px;	 	 
+	color: #350111;	 	 
+	padding: 12px 5px 12px 10px;
+}
+*/
+
+
+/*--------- Sidebar --------*/
+
+/* Behind sidebar */
+.tm-secondary {
+	
+}
+
+
+/*-------- Footer -----*/
+
+.tm-footer {
+	padding-top: 3px;
+	background: #400115;
+	/*background-color: rgba(61, 56, 56, 0.85);*/
+	border-top: 2px solid #333;
+	height: 75px; /* Covers the footer menu and copyright info. */
+	z-index: 10;
+	text-align: center !important;
+	
+	/* Sticky Footer */
+	position: absolute;
+	bottom: 0;
+	width: 100%;		
+}
+
+
+/*------ Footer navbar -------*/
+
+/* Footer navbar */
+.tm-footer-menu .uk-navbar-nav {
+    display: inline-block;
+  	float: none;
+  	text-align: center;
+  	max-width: 90%;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.tm-footer-menu a {
+	text-transform: none;
+	padding-left: 0;
+}
+
+
+/*--- Copyright area -----*/
+
+.tm-sub-footer {
+    color: #ccc;
+    font-size: 14px;
+    margin: 3px 0 0 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    clear: both;
+ }
+
+
+.tm-sub-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* A better control of the copyright area with this class. */
+.copyright-footer-full {  
+   margin: 0;
+   padding: 0;
+   max-width: 100%;
+}
+
+
+/* Adjusting comments section */
+
+.comment-reply-title {
+	color: #fff;
+	background: #670222;
+	padding: 10px;
+}
+
